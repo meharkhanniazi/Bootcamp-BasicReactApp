@@ -1,23 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Hello from './Hello';
-import './Hello.css'
-function App({name,age}) {
-  
+
+function App() {
   return (
-    <div>
-      <p>Hello World! from <strong>{name}</strong>.</p>
-      <p>I'm {age + 2 - 2} years old.</p>
-      <Hello firstName={name}></Hello>
-      <h3>Bootcamp 2020</h3>
-        <p className = "myStyle">Project 1:</p>
-        <ul>
-            <li>Build an Expense Tracker App using React Hooks and Context API</li>
-        </ul>
-        <p>Project Due Date:</p>
-        <ul>
-          <li>Monday, June 22, 2020 Midnight Pakistan Standard Time</li>
-        </ul>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+          <br/>
+          Deployed by <b>Mehar Khan Niazi</b>
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
